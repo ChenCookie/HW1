@@ -1,24 +1,610 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6X2-lb-MY2">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--選手頁面-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL9-lB-dJo">
+                                <rect key="frame" x="46" y="119" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image"/>
+                                <connections>
+                                    <segue destination="Pek-PI-m6q" kind="show" id="vEo-dB-jXb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOz-QA-Vlb">
+                                <rect key="frame" x="211" y="308" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-1"/>
+                                <connections>
+                                    <segue destination="Ziv-Ws-e9L" kind="show" id="Ypb-bL-5Ip"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUh-XG-j3G">
+                                <rect key="frame" x="211" y="119" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-2"/>
+                                <connections>
+                                    <segue destination="kh2-nP-Xhe" kind="show" id="ECF-3f-jME"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oX-Gb-7Or">
+                                <rect key="frame" x="46" y="308" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-4"/>
+                                <connections>
+                                    <segue destination="ZfW-pe-a7C" kind="show" id="cyf-BE-jhA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xV-ws-FWr">
+                                <rect key="frame" x="46" y="496" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-5"/>
+                                <connections>
+                                    <segue destination="U3h-oY-Tpm" kind="show" id="9Mn-G2-Glw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZL2-PX-OZS">
+                                <rect key="frame" x="211" y="496" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-3"/>
+                                <connections>
+                                    <segue destination="Ltu-CI-sUL" kind="show" id="yQy-gn-8iD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="選手頁面" id="sCA-D7-X82"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-240.80000000000001" y="268.51574212893553"/>
+        </scene>
+        <!--VAVA-->
+        <scene sceneID="sBa-BT-BKI">
+            <objects>
+                <viewController id="Ziv-Ws-e9L" customClass="ViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ud4-Wt-r4g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwk-bh-TSP">
+                                <rect key="frame" x="46" y="119" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-1"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdI-y8-xQS">
+                                <rect key="frame" x="179" y="91" width="180" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">名稱：VAVA 本名：毛衍七
+英文名：VAVA
+暱稱：無
+國籍：中華人民共和國
+出生：1995年10月29日（22歲）</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyM-pU-Fay">
+                                <rect key="frame" x="46" y="256" width="284" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">這位來自四川的女生，是《中國有嘻哈》目前存活選手中唯一的女Rapper，外表身材第一秒就抓住眾人目光之外，實力絕對也是非同小可，加上討人喜歡的個性，在台灣也累積了不少粉絲。單單看VAVA穩健的台風，實在有點難想像他還沒有22歲，本名毛衍七，早在16歲時便在Bar駐唱，上實境節目已經不是第一次，在去年時便曾在《夢想的聲音》改編S.H.E《不想長大》，挑戰導師田馥甄成功，也早有簽約經紀公司，除了演唱之外，也會做詞、曲，絕對是才女一枚。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6wn-5z-1OG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="VAVA" id="mpn-lQ-K5w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjt-ma-JKr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1498.4000000000001" y="-42.728635682158924"/>
+        </scene>
+        <!--TT-->
+        <scene sceneID="9PT-qM-pmR">
+            <objects>
+                <viewController id="U3h-oY-Tpm" customClass="ViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eMR-rB-Mz0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C25-xX-MbN">
+                                <rect key="frame" x="46" y="119" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-5"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeM-Sh-S0S">
+                                <rect key="frame" x="179" y="91" width="180" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">名稱：TT 本名：謝銳韜
+英文名：Tizzy T
+暱稱：你的男孩TT
+國籍：中華人民共和國
+出生：1993年2月2日（24歲）</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOT-qj-8Kb">
+                                <rect key="frame" x="46" y="244" width="284" height="366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">於2010年獲得華南地區“嘴上癮”Beat Box大賽冠軍。此後，開始踏上Hip-Hop音樂製作人的道路，在幾年間以驚人生物速度成長，練就了獨立包辦作曲，作詞，編曲及後期混縮的出眾能力。2012年，與搭檔Person組成說唱組合“雙赤”（Two Red），創作了一系列潮汕方言說唱作品，贏得了良好的反響與人氣。1月29日，發布了首張個人專輯《你的男孩》。8月發布數字大碟《768mixtape》。2017年6月24日，參加《中國有嘻哈》；7月，成為全國15強，加入吳亦凡戰隊並演唱《頭文字T》、《Going go》，成為全國六強。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="a2d-uA-COh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TT" id="pgm-ya-Tqf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qr-QO-DDi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1498.4000000000001" y="633.73313343328346"/>
+        </scene>
+        <!--艾福杰尼-->
+        <scene sceneID="Xif-wg-RTK">
+            <objects>
+                <viewController id="ZfW-pe-a7C" customClass="ViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8cg-vR-ID3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Df-UB-b4x">
+                                <rect key="frame" x="46" y="119" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-4"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0Q-3x-TDZ">
+                                <rect key="frame" x="179" y="91" width="180" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">名稱：艾福杰尼 本名：張學友 英文名：After Journey 暱稱：花園寶寶
+國籍：中華人民共和國
+出生：1992年3月24日（25歲）</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5z-uU-dU7">
+                                <rect key="frame" x="46" y="256" width="284" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">《中國有嘻哈》艾福傑尼可以說是一個靈活的胖子，相信很多人都被艾福傑尼的歌聲還有舞蹈給震撼到吧。《中國有嘻哈》艾福傑尼微博名也是「艾福傑尼」，大V認證為知名音樂博主，是著名說唱組合沙漠兄弟成員。艾福傑尼目前在北京和同樣來自新疆阿克蘇的黃旭一起做音樂，DMOB沙漠兄弟是他們的廠牌，最新專輯《五億探長》。艾福傑尼和黃旭一位曾是成功的說唱廠牌主理人，一位曾是即興說唱的battle大拿，他們一直以來都是非常出色的中文說唱歌手，並且兄弟倆的現場表演質量絕對是國內首屈一指的。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="P58-nx-NX1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="艾福杰尼" id="zst-KE-Q2A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mOr-YG-MC7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="634.39999999999998" y="-43.628185907046479"/>
+        </scene>
+        <!--黄旭-->
+        <scene sceneID="TS6-9u-Rjw">
+            <objects>
+                <viewController id="Ltu-CI-sUL" customClass="ViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tOQ-nI-lql">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgx-ld-WvU">
+                                <rect key="frame" x="46" y="119" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-3"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcE-Li-hIn">
+                                <rect key="frame" x="179" y="91" width="180" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">名稱：黄旭 本名：黄旭
+英文名：BooM
+暱稱：BooM黃旭
+國籍：中華人民共和國
+出生：1990年8月4日（27歲）</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOa-hk-4on">
+                                <rect key="frame" x="46" y="259" width="284" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">黃旭，1990年8月4日出生，來自新疆阿克蘇，是說唱圈內有名的rapper，目前和好友，同樣來自新疆庫爾勒的艾福杰尼一起做音樂，兩人一起創造了廠牌DMOB沙漠兄弟。中國有嘻哈黃旭實力有多強？黃旭可是新生代中文說唱代表人物之一。說唱風格多樣，Flow華麗。經過上百場現場演出磨練，現場掌控能力極強。2013-2014活躍在全國各地freestyle battle舞台的新銳力量。斬獲了中文說唱市場上幾乎所有馳名battle比賽的冠亞季軍頭銜。這華麗麗的成績單還不能說明他多優秀嗎？</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Lvg-gE-FEo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="黄旭" id="g6x-NM-oQg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wry-Ao-hyE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2279.1999999999998" y="633.73313343328346"/>
+        </scene>
+        <!--PG One萬磁王-->
+        <scene sceneID="YN6-9n-nra">
+            <objects>
+                <viewController id="Pek-PI-m6q" customClass="ViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SDF-IY-hAO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWb-XX-ocr">
+                                <rect key="frame" x="46" y="119" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ei-tg-l90">
+                                <rect key="frame" x="180" y="89" width="180" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">名稱：PG One萬磁王 本名：王昊
+英文名：PG ONE
+暱稱：萬總 老萬
+國籍：中華人民共和國
+出生：1994年4月19日（23歲）</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4a-BW-nnG">
+                                <rect key="frame" x="46" y="242" width="284" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">於2015年加入中國大陸嘻哈團體「紅花會」。2012年，參加了人生中第一場Iron Mic比賽；同年，以Battle MC身份正式進入說唱界。2013年，參加Iron Mic（鐵麥克）比賽獲得長春站冠軍；2014年，獲得《地下八英里》東北賽區冠軍，之後進入2015年全國總決賽，獲得全國亞軍；2015年下半年，發行新歌《中二病》等歌曲之後，參加由紅花會舉辦的《干一票》比賽，獲得全國冠軍，之後加入紅花會；2017年，簽約摩登天空公司，參加愛奇藝Hip-hop音樂節目《中國有嘻哈》，並獲得《中國有嘻哈》年度總冠軍。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="G6Q-z3-Kii"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PG One萬磁王" id="4q3-4K-6ne"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSC-LR-rTQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2279.1999999999998" y="-44.527736131934034"/>
+        </scene>
+        <!--GAI-->
+        <scene sceneID="5yY-YE-rhm">
+            <objects>
+                <viewController id="kh2-nP-Xhe" customClass="ViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="icn-lq-3fm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9V-zR-dzW">
+                                <rect key="frame" x="46" y="119" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-2"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFt-LK-1g1">
+                                <rect key="frame" x="179" y="91" width="180" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">名稱：GAI 本名：周延
+英文名：GAI
+暱稱：GAI爺、社會GAI
+國籍：中華人民共和國
+出生：1987年3月22日（30歲）</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKJ-Ja-Og3">
+                                <rect key="frame" x="46" y="253" width="284" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">GAI（1987年3月22日－），本名周延，是一位出生於四川省內江市威遠縣，來自於重慶市南岸區的嘻哈歌手。
+2017年，GAI參加中國有嘻哈，並陸續創作出膾炙人口的《火鍋底料》、《天乾物燥》以及與趙濤合作的《只聽自己的歌》等嘻哈單曲逐漸為觀眾所熟知。且憑藉與王嘉爾合作的《Papilon》成功進入總決賽。最終，依靠穩定的發揮和觀眾與製作人的支持，GAI獲得了中國有嘻哈第一季年度總冠軍。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="0Ts-4J-mTz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GAI" id="FKB-dL-zj3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5h9-WD-iz1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="634" y="633"/>
+        </scene>
+        <!--選手-->
+        <scene sceneID="Xtu-e0-1rb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uOh-HX-C4I" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="選手" image="Image-13" id="mRy-rt-7lk"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nv1-at-iae">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HHW-KU-E1d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kym-W0-LRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1068" y="268.51574212893553"/>
+        </scene>
+        <!--導師頁面-->
+        <scene sceneID="QKF-VD-487">
+            <objects>
+                <viewController id="tBu-fL-yre" customClass="ViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KkZ-qp-zfE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPl-SA-WtG">
+                                <rect key="frame" x="217" y="210" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-7"/>
+                                <connections>
+                                    <segue destination="48B-gN-Zqu" kind="show" id="l8H-TR-0PT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="吳亦凡" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tT-Xl-lHk">
+                                <rect key="frame" x="73" y="335" width="59" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbT-pT-N3y">
+                                <rect key="frame" x="42" y="210" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-8"/>
+                                <connections>
+                                    <segue destination="udb-SZ-tYs" kind="show" id="733-ld-T3x"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="潘瑋柏" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbv-pE-agM">
+                                <rect key="frame" x="257" y="335" width="59" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqA-sb-iWd">
+                                <rect key="frame" x="69" y="424" width="236" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Image-9"/>
+                                <connections>
+                                    <segue destination="5cp-0v-0rc" kind="show" id="6gc-fK-AqB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="張震嶽＆熱狗" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLk-Of-BFp">
+                                <rect key="frame" x="147" y="586" width="82" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="UY6-7M-4og"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="導師頁面" id="nLi-y6-59m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="soE-qO-k5H" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-582" y="1306"/>
+        </scene>
+        <!--導師-->
+        <scene sceneID="W4W-ar-94M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c1a-q9-jpF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="導師" image="Image-14" id="j9V-jE-XgF"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gc1-tq-SeH">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tBu-fL-yre" kind="relationship" relationship="rootViewController" id="wWB-Ar-H7J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PgU-uu-vsI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1550" y="1307"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="V5t-cc-hV1">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6X2-lb-MY2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AqB-ry-qmo">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uOh-HX-C4I" kind="relationship" relationship="viewControllers" id="RTG-Sk-tXF"/>
+                        <segue destination="c1a-q9-jpF" kind="relationship" relationship="viewControllers" id="esf-xC-CVA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJ7-Ds-732" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2017" y="269"/>
+        </scene>
+        <!--吳亦凡-->
+        <scene sceneID="Tlt-oV-sAN">
+            <objects>
+                <viewController id="udb-SZ-tYs" customClass="ViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HK4-9m-eSh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udo-pM-kp8">
+                                <rect key="frame" x="197" y="158" width="180" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">名稱：吳亦凡 本名：吳亦凡、李嘉恆
+英文名：Kris Wu
+國籍：加拿大
+出生：1990年11月6日（26歲）</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-10" translatesAutoresizingMaskIntoConstraints="NO" id="W8R-R6-gqt">
+                                <rect key="frame" x="24" y="138" width="151" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zef-w6-7Z0">
+                                <rect key="frame" x="54" y="356" width="284" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">吳亦凡（英語：Kris Wu；1990年11月6日－），藝名：Kris（韓語：크리스），本姓李，原名李嘉恆，華裔加拿大人，男藝人，曾為韓國男子組合EXO及中國分隊EXO-M隊長，隊內擔任 Rapper及門面負責人，目前在中國以演員和歌手與模特的身分活動中但因合約關係在韓國與日本的活動仍然由SM娛樂負責，而除此之外地區的活動則需向公司繳納一定比例的收入，並正式退出組合。2017年，出任《中國有嘻哈》節目製作人。節目中一句 "你有FreeStyle嗎？" 也成為觀眾討論話題。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="hS5-AU-BkC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="吳亦凡" id="ns5-bo-PdV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJz-Ot-u4B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="1462"/>
+        </scene>
+        <!--潘瑋柏-->
+        <scene sceneID="VbN-PJ-DYo">
+            <objects>
+                <viewController id="48B-gN-Zqu" customClass="ViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qyd-WJ-IIG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-11" translatesAutoresizingMaskIntoConstraints="NO" id="Z0S-IO-tDG">
+                                <rect key="frame" x="22" y="138" width="160" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz3-ro-bcE">
+                                <rect key="frame" x="45" y="341" width="284" height="388"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">在美國出生的潘瑋柏，7歲時回到臺灣，1999年於臺北美國學校畢業，後就讀於美國波莫納加州州立理工大學大眾傳播系，也是中學籃球校隊隊長，和大學校隊隊員，暑假返臺至電台打工，受張學友影響而朝向樂壇邁進，2001年正式加入演藝圈，由電視台VJ出道，因參與麻辣鮮師戲劇演出進而踏入歌壇，於2002年發行第一張專輯，2011年10月21日以愛無限《梁景晧》一角拿下第四十六屆金鐘獎影帝寶座。
+2009年與好友李晨合開的NPC潮流服飾店目前在上海、北京兩地均有店鋪，另外目前在淘寶網也架設了網路店鋪，並在2011年擁有自創服飾品牌「Undisputed」(無可爭議的)。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpQ-iA-cuJ">
+                                <rect key="frame" x="195" y="157" width="180" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">本名：潘瑋柏
+英文名：Wilber Pan/Will Pan
+暱稱：潘帥
+國籍：中華民國、美國
+出生：1980年8月6日（37歲）</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="RsG-le-8kc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="潘瑋柏" id="cWE-GC-87A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9s-Xg-hjR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="1462"/>
+        </scene>
+        <!--熱狗＆張震嶽-->
+        <scene sceneID="GmV-WC-2JS">
+            <objects>
+                <viewController id="5cp-0v-0rc" customClass="ViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Haf-0H-vlW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-12" translatesAutoresizingMaskIntoConstraints="NO" id="gok-Qu-B78">
+                                <rect key="frame" x="20" y="147" width="165" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usV-gR-gss">
+                                <rect key="frame" x="195" y="235" width="180" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">名稱：張震嶽（右） 本名：海雅·谷慕（Ayal Komod）
+暱稱：阿嶽
+國籍：中華民國
+出生：1974年5月2日（43歲）</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bP0-gB-dKa">
+                                <rect key="frame" x="196" y="123" width="180" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">名稱：熱狗（左） 本名：姚中仁
+英文名：MC Hotdog
+國籍：中華民國
+出生：1978年4月10日（39歲）</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruc-hT-GM3">
+                                <rect key="frame" x="45" y="344" width="284" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">姚中仁，生於台北，饒舌歌手。台北市立建國中學補校、天主教輔仁大學影像傳播學士。他的歌曲大多使用通俗直白的語言對各種社會現象進行赤裸裸的揭露，其中包含許多粗口、髒話和涉及到性詞彙並對許多藝人或其他人的攻擊，一針見血又辛辣，整體風格十分強烈。 張震嶽，生於台灣宜蘭縣蘇澳鎮南方澳，阿美族人，流行搖滾創作歌手，自1993年至今共發行過多張音樂專輯，創作出的經典歌曲有〈愛我別走〉、〈乾妹妹〉、〈自由〉、〈分手吧〉、〈思念是一種病〉、〈破吉他〉等，也曾參與電影演出。2014年憑《我是海雅谷慕》專輯獲得第25屆金曲獎『最佳國語專輯獎』。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="VCY-S8-jGt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="熱狗＆張震嶽" id="1xf-FR-An5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORp-WQ-cVy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847" y="1462"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="270" height="274"/>
+        <image name="Image-1" width="257" height="274"/>
+        <image name="Image-10" width="447" height="587"/>
+        <image name="Image-11" width="411" height="510"/>
+        <image name="Image-12" width="396" height="391"/>
+        <image name="Image-13" width="25" height="25"/>
+        <image name="Image-14" width="25" height="25"/>
+        <image name="Image-2" width="265" height="274"/>
+        <image name="Image-3" width="264" height="274"/>
+        <image name="Image-4" width="232" height="274"/>
+        <image name="Image-5" width="247" height="274"/>
+        <image name="Image-7" width="143" height="155"/>
+        <image name="Image-8" width="154" height="161"/>
+        <image name="Image-9" width="223" height="147"/>
+    </resources>
 </document>
